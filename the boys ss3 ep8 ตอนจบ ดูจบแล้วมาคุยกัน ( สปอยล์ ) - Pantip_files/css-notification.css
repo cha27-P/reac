@@ -1,0 +1,664 @@
+/* start styles.css */
+/*right*/
+.mr-0 { margin-right: 0em !important;}
+.mr-1 { margin-right: 1em !important;}
+
+/*left*/
+.ml-0 { margin-left: 0em !important;}
+.ml-1 { margin-left: 1em !important;}
+.ml-2 { margin-left: 2em !important;}
+.ml-3 { margin-left: 3em !important;}
+.ml-4 { margin-left: 4em !important;}
+.ml-5 { margin-left: 5em !important;}
+
+/*top*/
+.mt-0 { margin-top: 0em !important;}
+.mt-1 { margin-top: 10px !important;}
+.mt-2 { margin-top: 2em !important;}
+.mt-3 { margin-top: 3em !important;}
+.mt-4 { margin-top: 4em !important;}
+.mt-5 { margin-top: 5em !important;}
+
+.pt-0 {padding-top:0 !important; }
+
+/*bottom*/
+.mb-0 { margin-bottom: 0em !important;}
+.mb-1 { margin-bottom: 1em !important;}
+.mb-2 { margin-bottom: 2em !important;}
+.mb-3 { margin-bottom: 3em !important;}
+.mb-4 { margin-bottom: 4em !important;}
+.mb-5 { margin-bottom: 5em !important;}
+
+/*y*/
+.py-0 {padding-top: 0 !important;padding-bottom: 0 !important;}
+.py-1 {padding: 5px 0 !important;}
+.py-2 {padding: 10px 0 !important;}
+.py-3 {padding: 30px 0 !important;}
+.my-0 {margin-top: 0 !important; margin-bottom: 0 !important;}
+.my-1 {margin-top: 10px !important; margin-bottom: 10px !important;}
+
+/*x*/
+.px-0  {padding-right: 0 !important;padding-left: 0 !important;}
+.px-1  {padding-right: 5px !important;padding-left: 5px !important;}
+.mx-0 {margin-right: 0 !important; margin-left: 0 !important;}
+
+.pl-0 {padding-left: 0 !important;}
+.pl-15 {padding-left: 1.5em;}
+.pl-1 {padding-left: 1em;}
+.pl-2 {padding-left: 2em;}
+.pl-3 {padding-left: 3em;}
+.pl-4 {padding-left: 4em;}
+.pl-5 {padding-left: 5em;}
+
+.pr-0 {padding-right: 0 !important;}
+.pr-1 {padding-right: 1em;}
+.pr-2 {padding-right: 2em;}
+.pr-3 {padding-right: 3em;}
+.pr-4 {padding-right: 4em;}
+.pr-5 {padding-right: 5em;}
+
+.pb-0 {padding-bottom: 0 !important;}
+.pb-1 {padding-bottom: 10px !important;}
+
+.float-left {float: left !important;}
+.float-right {float: right !important;}
+.float-none {float: none !important;}
+.relative {position: relative;}
+
+.br-b { @include border('bottom', 1px, solid, $horizontal-line-color);}
+.o-hidden {overflow: hidden;}
+.w-auto { width: auto !important;}
+.w-100 { width: 100% !important;}
+
+.alignleft {text-align: left !important;}
+.alignright {text-align: right !important;}
+.aligncenter {text-align:center !important;}
+
+a:visited {text-decoration: none;}
+a.noti-list:link  {
+	text-decoration: none;
+	color: #A6A3C7;
+}
+
+div.pr-2 a:visited{
+	text-decoration: none;
+	color: #e5c700;
+}
+
+div.pr-2.primary-txt a:visited{
+	text-decoration: none;
+	color: #ccc;
+}
+
+.noti .display-title a{
+	text-decoration: none;
+}
+
+.row.card {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #6e6e8e;
+    font-size: 17px;
+    -webkit-border-radius:2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+}
+
+
+.row.card [class*="col-"] {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/* button */
+.btn {
+  display: inline-block;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.8em;
+  font-size: 1em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: pointer; }
+/* 	end styles.css
+ 	start noti */
+.noti {
+	position: relative;
+	font-size: 14px !important; }
+
+
+.noti .display-title {
+    background: #2d2a49;
+    color: #e5c700;
+    padding: 10px;
+    border-bottom: 1px solid rgba(110, 110, 142, 0.3);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.noti-list {
+	padding-left: 20px !important;
+	margin: 0;
+	line-height: 24px;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-bottom: 1px solid rgba(110, 110, 142, 0.3);
+	min-height: 50px;
+	max-height: 200px;
+	overflow: hidden;
+	position: relative;
+	display: block;
+	cursor: pointer; }
+
+.noti-list.nodata{
+	cursor: text;
+}
+.primary-txt, .primary-txt a{
+	color:#ccc;
+}
+
+.cls-read-all-noti{
+	width: 50%;
+	top: 16px;
+	position: absolute;
+	padding-left: 10px;
+	font-size: 0.929em;
+    color: #999;
+}
+
+.cls-read-all-noti .img-read-all-noti{
+	background: url(https://ptcdn.info/images/noti-comment-inactive.svg) left no-repeat;
+    float: left;
+    width: 13px;
+    height: 13px;
+    padding: 3px;
+}
+
+.cls-read-all-noti a:link, .cls-read-all-noti a:visited{
+	text-decoration: none;
+	color:#999;
+}
+
+.cls-read-all-noti a:hover{
+	text-decoration: underline;
+	color:#E5C700;
+}
+
+.noti .active, .noti .inactive {
+	padding-left: 30px; }
+.noti .active {
+	font-weight: bold; 
+	color: #ccc;
+}
+.noti .active:hover {
+	color: #fff; }
+.noti .inactive {
+	color: #9995ae; }
+.noti .inactive:hover {
+	color: #fff; }
+.noti .active-icon {
+	background: url(https://ptcdn.info/images/noti-alert.svg) left no-repeat;
+	width: 7px;
+	height: 7px;
+	position: absolute;
+	left: 8px;
+	top: 11px; }
+.noti-avatar {
+	padding-top: 6px;
+	float: left; }
+.noti-avatar img {
+  width: 38px;
+  height: 38px;
+	-webkit-border-radius: 99px;
+	-moz-border-radius: 99px;
+	-ms-border-radius: 99px;
+	border-radius: 99px; }
+/*@media screen and (min-width: 300px) {*/
+/* noti */
+	.noti {
+	    position: relative;
+	    font-size: 14px !important; }
+	.noti .display-title {
+	    background: #2d2a49;
+	    color: #e5c700;
+	    padding: 10px;
+	    border-bottom: 1px solid rgba(110, 110, 142, 0.3);
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    -ms-border-radius: 3px;
+	    border-radius: 3px; }
+	.noti-list {
+	    padding-left: 20px !important;
+	    margin: 0;
+	    line-height: 24px;
+	    padding-top: 0;
+	    padding-bottom: 0;
+	    border-bottom: 1px solid rgba(110, 110, 142, 0.3);
+	    min-height: 50px;
+	    max-height: 200px;
+	    overflow: hidden;
+	    position: relative;
+	    display: block;
+	    cursor: pointer; }
+	.noti .active, .noti .inactive {
+	    padding-left: 30px; }
+	.noti .active {
+	    font-weight: bold; }
+	.noti .active:hover {
+	    color: #fff; }
+	.noti .inactive {
+	    color: #9995ae; }
+	.noti .inactive:hover {
+	    color: #f0f0f0; }
+	.noti .active-icon {
+	    background: url(https://ptcdn.info/images/noti-alert.svg) left no-repeat;
+	    width: 7px;
+	    height: 7px;
+	    position: absolute;
+	    left: 8px;
+	    top: 11px; }
+	.noti-avatar {
+	    padding-top: 6px;
+	    float: left; }
+	.noti-avatar img {
+	    -webkit-border-radius: 99px;
+	    -moz-border-radius: 99px;
+	    -ms-border-radius: 99px;
+	    border-radius: 99px; }
+	.icon-noti-comment {
+	    position: absolute;
+	    width: 13px;
+	    height: 13px;
+	    top: 7px;
+	    left: 50px;
+	    background: url(https://ptcdn.info/images/noti-comment.svg) left top no-repeat; }
+	.icon-noti-comment.inactive {
+	    background: url(https://ptcdn.info/images/noti-comment-inactive.svg) left top no-repeat; }
+
+	.icon-noti-reply {
+		position: absolute;
+	    width: 13px;
+	    height: 13px;
+	    top: 7px;
+	    left: 50px;
+	    background: url(https://ptcdn.info/images/noti-reply.svg) left top no-repeat; }
+	.icon-noti-reply.inactive {
+	    background: url(https://ptcdn.info/images/noti-reply-inactive.svg) left top no-repeat; }
+/*button*/
+	.btn-delete {
+	    background: url(https://ptcdn.info/images/delete.svg) no-repeat;
+	    width: 13px;
+	    height: 13px;
+	    position: absolute;
+	    right: 0;
+	    top: 10px;
+	}
+/*}*/
+/*end list_noti*/
+
+/* noti realtime */
+.noti-realtime {
+    position: fixed;
+    bottom: 35px;
+    right: 5px; 
+	z-index: 9999;
+}
+.noti-realtime-avatar {
+    float: left;
+    padding: 5px 8px;
+    overflow: hidden;
+}
+.noti-realtime-avatar img {
+	-webkit-border-radius: 99px;
+	-moz-border-radius: 99px;
+	-ms-border-radius: 99px;
+	border-radius: 99px;
+	float: left; }
+.noti-realtime-action {
+	text-indent: 25px;
+    margin-left: 10px;
+	margin-right: 10px;
+}
+.noti-realtime .icon-noti-comment, .noti-realtime .icon-noti-reply {
+	top: 2px; }
+
+.noti-realtime .realtime-list {
+    overflow: hidden;
+    margin: 5px 0 0 0;
+    border: 1px solid white;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    background: #d6d6d6;
+    width: 285px;
+    height: 56px;
+    margin-top: 5px;
+    display: block;
+    word-break: break-all;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000;
+    -webkit-box-shadow: 0 0 6px 0 black;
+    -moz-box-shadow: 0 0 6px 0 black;
+    box-shadow: 0 0 6px 0 black;
+    z-index: 1;
+}
+
+
+
+.noti-realtime-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 999;
+    background: url(https://ptcdn.info/images/noti-alert-close.svg) no-repeat;
+    width: 14px;
+    height: 14px;}
+/*end noti realtime */
+
+
+/*  switch เปิด ปิด noti  */
+	.switch-light {
+    display: block;
+    height: 25px;
+    position: relative;
+    overflow: visible;
+    padding: 0; }
+	
+    .switch-light * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    .switch-light a {
+      display: block;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
+    .switch-light label, .switch-light > span {
+      line-height: 30px;
+      vertical-align: middle; }
+    .switch-light input:focus ~ a, .switch-light input:focus + label {
+      outline: 1px dotted #888888; }
+    /*.switch-light label {
+      position: relative;
+      z-index: 3;
+      display: block;
+      width: 100%; }*/
+    .switch-light input {
+      position: absolute;
+      opacity: 0;
+      z-index: 5; }
+      .switch-light input:checked ~ a {
+        right: 0%; }
+    .switch-light > span {
+      position: absolute;
+      left: -100px;
+      width: 100%;
+      margin: 0;
+      padding-right: 100px;
+      text-align: left; }
+      .switch-light > span span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        display: block;
+        width: 50%;
+        margin-left: 100px;
+        text-align: center; }
+        .switch-light > span span:last-child {
+          left: 50%; }
+    .switch-light a {
+      position: absolute;
+      right: 50%;
+      top: 0;
+      z-index: 4;
+      display: block;
+      width: 50%;
+      height: 100%;
+      padding: 0; }
+	
+	@media only screen and (-webkit-max-device-pixel-ratio: 2) and (max-device-width: 1280px) {
+  .switch-light, .switch-toggle {
+    -webkit-animation: webkitSiblingBugfix infinite 1s; } }
+	
+	 .switch-candy {
+    background-color: #2d3035;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px #191b1e;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3), 0 1px 0px rgba(255, 255, 255, 0.2); 
+	width:100px;
+  }
+  
+    .switch-candy label {
+      color: white;
+      -webkit-transition: color 0.2s ease-out;
+      -moz-transition: color 0.2s ease-out;
+      transition: color 0.2s ease-out; }
+    .switch-candy input:checked + label {
+      color: #333333;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
+    .switch-candy a {
+      border: 1px solid #333333;
+      background-color: #608C36;
+      border-radius: 3px;
+      background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+      background-image: linear-gradient(to  bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45); }
+    .switch-candy > span {
+      color: #333333;
+      text-shadow: none; }
+    .switch-candy span {
+      color: white; }
+    .switch-candy.switch-candy-blue a {
+      background-color: #38a3d4; }
+    .switch-candy.switch-candy-yellow a {
+      background-color: #f5e560; }
+	
+	.wrap-switch {
+		position:absolute;
+		right: 5px;
+		top: 11px;
+		font-size: 0.89em;
+	}
+	
+	.set-popup-noti-txt{
+		position:absolute;
+		top: 16px;
+		font-size: 1em;
+		right: 120px;
+	}
+	
+	.set-popup-noti{
+		position: relative;
+		min-height: 38px;
+	}
+
+/* end switch เปิด ปิด noti  */
+
+
+/*-- start กดติดตาม --*/  
+
+.topic-follow {
+	float: right; position: relative; margin-top: 5px;z-index: 99; 
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.topic-follow .icon-follow {
+	background:url(https://ptcdn.info/images/noti/ic-follow.png) no-repeat;
+}
+.topic-follow button.btn-follow,.topic-follow button.btn-unfollow {
+	color: #c0c0c0; 
+	font-weight: bold; 
+	width: 128px; 
+	height: 30px; 
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 1); 
+	cursor: pointer;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.topic-follow button.btn-follow.color-1, .topic-follow button.btn-unfollow.color-1 { /* คอมเมนท์ จขกท */
+	background-color: #172c59 !important;
+	border: solid 1px #101f3f !important;
+}
+.topic-follow button.btn-follow.color-2, .topic-follow button.btn-unfollow.color-2 { /* คอมเมนท์ปกติ */
+	background-color: #322f53 !important;
+	border: 1px solid #585676 !important;
+}
+.topic-follow button.btn-follow .btn-follow-arrowdown, .topic-follow button.btn-unfollow .btn-follow-arrowdown {
+	width: 14px; height: 6px; position: absolute;
+	background-position: 0 -27px;
+	margin: 6px 8px;
+	
+}
+.topic-follow button.btn-follow .btn-follow,.topic-follow button.btn-unfollow .btn-follow {
+    width: 14px;
+    height: 8px;
+    position: absolute;
+    /*margin: 6px 8px;*/
+    margin: 10px 8px;
+    background-position: -0px -13px;
+    left: 3px;
+    top: 6px;
+}
+.topic-follow-toggle {
+	position: absolute; 
+	width: 196px;
+	right: 0; 
+	top:30px;
+	/*top:35px;*/
+	color: #000;
+	border: 1px solid #c0c0c0;
+	background-color: #d6d6d6;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+
+.display-checkbox-follow {			
+	font-size: 0.929em;
+	padding:5px;
+	line-height: 1.5em;
+}
+.display-checkbox-follow:last-child {		
+	border-bottom: 0;
+}
+.display-checkbox-follow:hover {		
+	background: #c0c0c0;
+}
+.display-checkbox-follow input[type='checkbox'] {
+  display: none;
+  cursor: pointer;
+}
+.display-checkbox-follow input[type='checkbox']:focus,
+.display-checkbox-follow input[type='checkbox']:active {
+  outline: none;
+}
+.display-checkbox-follow input[type='checkbox'] + label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+}
+.display-checkbox-follow input[type='checkbox'] + label:before,
+.display-checkbox-follow input[type='checkbox'] + label:after {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  position: absolute;
+}
+.display-checkbox-follow input[type='checkbox'] + label:after {
+	color: #ccc;
+}
+.display-checkbox-follow input[type='checkbox']:checked + label:before {
+	background:url(https://ptcdn.info/images/noti/ic-noti-check.png) no-repeat 4px 5px #C8C8C8;
+}
+.display-checkbox-follow input[type='checkbox'] + label:before {
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  background: #C8C8C8;
+}
+
+
+/*-- ห้ามลบ_ยังไม่กดติดตาม --*/
+
+.display-radio-follow {			
+	font-size: 0.929em;
+	padding:5px;
+	line-height: 1.5em;
+}
+.display-radio-follow:last-child {		
+	border-bottom: 0;
+}
+.display-radio-follow:hover {		
+	background: #c0c0c0;
+}
+.display-radio-follow input[type='radio'] {
+  display: none;
+  cursor: pointer;
+}
+.display-radio-follow input[type='radio']:focus,
+.display-radio-follow input[type='radio']:active {
+  outline: none;
+}
+.display-radio-follow input[type='radio'] + label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+}
+.display-radio-follow input[type='radio'] + label:before,
+.display-radio-follow input[type='radio'] + label:after {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  position: absolute;
+}
+.display-radio-follow input[type='radio'] + label:after {
+	color: #ccc;
+}
+.display-radio-follow input[type='radio']:checked + label:before {
+	background:url(https://ptcdn.info/images/noti/ic-noti-check.png) no-repeat 4px 5px #C8C8C8;
+}
+.display-radio-follow input[type='radio'] + label:before {
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  background: #C8C8C8;
+}
+
+.display-radio-follow label{
+	width: 85%;
+}

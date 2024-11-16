@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>onClick</title>
+    <script>
+        function compute(f) {
+            var res = parseInt(f.x.value) + parseInt(f.y.value);
+            alert(res);
+        }
+    </script>
+</head>
+
+<body>
+    <form name="JavaScript Event">
+        <input type="text" name="x"> + <input type="text" name="y">
+        <input type="button" value="Calculate" onClick="compute(this.form)">
+    </form>
+</body>
+
+</html>

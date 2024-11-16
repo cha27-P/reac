@@ -1,0 +1,99 @@
+.pt-topic-detail {
+    margin-bottom: 0px!important;
+    padding: 2px 20px 0px 0px;
+}
+.pt-topic-detail .mce-btn .mce-txt {
+    font-size: inherit!important;
+    line-height: inherit!important;
+    color: #ffffff!important;
+}
+.pt-topic-detail .mce-widget.mce-btn {
+    background-color: #2e2c4a!important;
+    border: solid 1px #8d8d8d!important;
+    color: #f8f8f8!important;
+}
+.pt-topic-detail .mce-btn i {
+    color: #f8f8f8!important;
+}
+.pt-topic-detail .mce-btn-group:not(:first-child) {
+    border-left: none!important;
+}
+.pt-topic-detail .mce-toolbar .mce-btn-group {
+    /* margin-right: 4px!important; */
+    margin-left: 6px;
+}
+.pt-topic-detail #detail_ifr {
+    background: #335087!important;
+    margin-right: 2px!important;
+}
+.pt-topic-detail .mce-toolbar-grp {
+    white-space: normal!important;
+    background: #335087!important;
+    padding: 4px 0px!important;
+}
+.pt-topic-detail .mce-panel {
+    border-color: #5B79B4!important;
+    background-color: #335087!important;
+    
+}
+.pt-topic-detail .mce-container-body div, .mce-wordcount {
+    color: white!important;
+}
+.pt-topic-detail .mce-container-body .mce-btn {
+    margin: 0px 3px 0px 0px!important;
+}
+.pt-topic-detail .mce-btn-group {
+    margin-top: 0px!important;
+}
+.pt-topic-detail .mce-btn button {
+    height: 26px;
+    padding: 3px 6px!important;
+    font-size: 13px!important;
+}
+.pt-topic-detail .mce-active button i {
+    color: #E5C700!important;
+}
+.pt-topic-detail .mce-btn.mce-active, .mce-btn.mce-active:hover {
+    background-color: #2e2c4a!important;
+}
+.pt-topic-detail .mce-tinymce {
+    display: block!important;
+}
+.pt-topic-detail .mce-path{
+    display: none!important;
+}
+#pt-topic-detail-container i.mce-i-resize {
+    color: #fff!important; 
+}
+#pt-topic-detail-container>.mce-tinymce>.mce-stack-layout>.mce-top-part>.mce-container-body {
+    height: 40px!important;
+}
+.mce-i-insert_image {
+    background-image: url(https://ptcdn.info/images/tinymce-editor-icons/baseline_insert_photo_white_18dp.png)!important;
+    background-size: 16px 16px!important;
+}
+.mce-i-insert_link {
+    background-image: url(https://ptcdn.info/images/tinymce-editor-icons/baseline_link_white_18dp.png)!important;
+    background-size: 18px 18px!important;
+}
+.mce-i-insert_map {
+    background-image: url(https://ptcdn.info/images/tinymce-editor-icons/baseline_place_white_18dp.png)!important;
+    background-size: 18px 18px!important;
+}
+.mce-i-insert_toys {
+    background-image: url(https://ptcdn.info/images/tinymce-editor-icons/baseline_mood_white_18dp.png)!important;
+    background-size: 18px 18px!important;
+}
+.mce-i-insert_video {
+    background-image: url(https://ptcdn.info/images/tinymce-editor-icons/baseline_video_library_white_18dp.png)!important;
+    background-size: 18px 18px!important;
+}
+.mce-i-insert_spoil {
+    background-image: url(https://ptcdn.info/images/tinymce-editor-icons/ic-insert_spoil-512px.png)!important;
+    background-size: 18px 18px!important;
+    filter: brightness(0) invert(1);
+}
+.mce-i-insert_code {
+    background-image: url(https://ptcdn.info/images/tinymce-editor-icons/baseline_code_white_18dp.png)!important;
+    background-size: 18px 18px!important;
+}

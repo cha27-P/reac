@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title> ตัวอย่างการใช้ฟังชั่นใน javascript</title>
+</head>
+
+<body>
+    <script>
+        function calc(myform) {
+            var result = parseInt(myform.number1.value) + parseInt(myform.number2.value);
+            alert(result)
+        }
+    </script>
+    <form>
+        <input type="text" name="number1">
+        <input type="text" name="number2">
+        <input type="button" onclick="calc (this.form)">
+    </form>
+</body>
+
+</html>

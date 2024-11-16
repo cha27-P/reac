@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title> ตัวอย่างการใช้from</title>
+</head>
+
+<body>
+    <form method="get" action="#" name="form1">
+        ชื่อผู้ใช้:<input type="text" size="10"><br><br>
+        รหัสผ่าน:<input type="password" size="10"><br><br>
+        <input type="submit" value="ตกลง" />
+        <input type="reset" value="ล้างข้อมูล" />
+        <input type="button" value="กดฉันหน่อย" onclick="alert('สวัสดีชาวโลก')" /><br><br>
+        <input type="file" name="uploadfild" />
+    </form>
+    <form method="post" name="form2">
+        <h4> วันนี้คุณไปกินอาหารกลางวันอะไรมา</h4>
+        <input type="checkbox" value="1" checked="checked" />ข้าวขาหมู<br>
+        <input type="checkbox" value="2" /> ข้าวมันไก่<br>
+        <input type="checkbox" value="3" /> ข้าวหมูแดง <br>
+    </form>
+    <form method="post" action="#" name="form3">
+        เพศ : <input type="radio" name="sex" value="male" />เพศชาย<input type="radio" name="sex"
+            value="female" />เพศหญิง<br>
+    </form>
+    <form method="post" action="#"><textarea cols="30" rows="5">ปัจจุบันภาษา บลาๆๆๆๆๆๆๆ</textarea></form><br>
+    กรุณาเลือกอาหารเย็นวันนี้
+    <select name="food">
+        <option value="1">ข้าวขาหมู</option>
+        <option value="2">ข้าวมันไก่</option>
+        <option value="3" selected="selected">ข้าวหมูแดง</option>
+        <option value="4">ข้าวผัด</option>
+    </select>
+    <fieldset>
+        <legend> ข้อมูลส่วนตัว </legend>
+        <label>ชื่อ:<input type="text" /></label><br>
+        <label>นามสกุล: <input type="text" /></label><br>
+        <label>เพศ:
+            <input type="radio" name="sex" checked="checked" />ชาย
+            <input type="radio" name="sex" />หญิง
+        </label><br>
+        <label>ที่อยู่:<br><textarea cols="45" rows="5"></textarea></label>
+    </fieldset>
+</body>
+
+</html>

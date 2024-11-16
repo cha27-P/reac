@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title> ตัวอย่างการใช้งานฟังก์ชัน</title>
+</head>
+
+<body>
+    <h4>
+        ตัวอย่างการใช้ฟังก์ชันสำเร็จรูป java scripe
+    </h4>
+    <SCRIPT LANGUAGE="JavaScript">
+        function calc(myform) {
+            var result = parseInt(myform.number1.value) +
+                parseInt(myform.number2.value);
+            alert(result);
+        }
+    </SCRIPT>
+    <FORM>
+        ตัวเลข#1 = <INPUT TYPE="text" NAME="number1"> <br>
+        ตัวเลข#2 = <INPUT TYPE="text" NAME="number2"> <br>
+        <INPUT TYPE="button" onClick="calc(this.form)" value="Click me">
+    </FORM>
+    <h4>
+        ตัวอย่างการใช้ฟังก์ชันmี่สร้างขึ้นเอง
+    </h4>
+    <SCRIPT LANGUAGE="JavaScript">
+        function RepeatHello() {
+            document.write("Hello World<BR>");
+        }
+        RepeatHello();
+        RepeatHello();
+        RepeatHello();
+
+    </SCRIPT>
+
+</body>
+
+</html>

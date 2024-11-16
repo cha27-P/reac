@@ -1,0 +1,166 @@
+window.onload = function()
+{
+	var header = document.getElementById("pantipHeader");
+	var sticky = header.offsetTop;
+	var category_m = document.getElementById("pantipCategory_m");
+	var other = document.getElementById("pantipOther");
+	var userMenu = document.getElementById("ptListDropdownMenu");
+	var communityMenu = document.getElementById("php-commu-dialog");
+
+	var showUserMenu = false;
+	var showCommunityMenu = false;
+	
+	/*Scroll Down Menu*/
+	function stickNav() 
+	{
+		if (window.pageYOffset > sticky) 
+		{
+			header.classList.add("pt-sticky-navigation");
+			category_m.classList.add("pt-sticky-container");
+			other.classList.add("pt-sticky-container");
+			
+			document.getElementsByClassName("pt-stickyLogo")[0].classList.add("toggleCat");
+			document.getElementsByClassName("pt-stickyLogo")[1].classList.remove("toggleCat");
+			
+		} 
+		else 
+		{
+			header.classList.remove("pt-sticky-navigation");
+			category_m.classList.remove("pt-sticky-container");
+			other.classList.remove("pt-sticky-container");
+			
+			document.getElementsByClassName("pt-stickyLogo")[0].classList.remove("toggleCat");
+			document.getElementsByClassName("pt-stickyLogo")[1].classList.add("toggleCat");
+		}
+	}
+	/*Open Close Menu*/
+	document.onclick = function(e)
+	{
+		if(e.target.id == "openCate_m" || e.target.id == "openCate") {
+			if(userMenu != null){
+				userMenu.style.display = 'none';
+				userMenu.style.opacity = 0;
+			}
+			if (communityMenu != null) {
+				communityMenu.classList.add("pt-php-block-hide");
+			}
+			showUserMenu = false;
+			showCommunityMenu = false;
+            if(document.getElementById("pantipCategory_m").classList.contains("toggleCat")) {
+                other.classList.add("toggleCat");
+                document.getElementById("pt-other-container").classList.remove("other-height");
+
+                document.getElementById("pantipCategory_m").classList.remove("toggleCat");
+                document.getElementById("pt-category-container").classList.add("cat-height");
+            }
+            else {
+                document.getElementById("pantipCategory_m").classList.add("toggleCat"); 
+                document.getElementById("pt-category-container").classList.remove("cat-height");
+            }
+		}
+		
+		else if(e.target.id == "openOther")
+		{
+			if(userMenu != null){
+				userMenu.style.display = 'none';
+				userMenu.style.opacity = 0;
+			}
+			if (communityMenu != null) {
+				communityMenu.classList.add("pt-php-block-hide");
+			}
+			showUserMenu = false;
+			showCommunityMenu = false;
+            if(other.classList.contains("toggleCat")) {
+                other.classList.remove("toggleCat");
+                document.getElementById("pt-other-container").classList.add("other-height");
+                document.getElementById("pantipCategory_m").classList.add("toggleCat"); 
+                document.getElementById("pt-category-container").classList.remove("cat-height");
+            }
+            else {
+                other.classList.add("toggleCat");
+                document.getElementById("pt-other-container").classList.remove("other-height");
+            }
+			
+		}
+	
+		else if(e.target.id == "openUserMenu")
+		{
+			switch(showUserMenu)
+			{
+				case true: 
+					if(userMenu != null){
+						userMenu.style.display = 'none';
+						userMenu.style.opacity = 0;
+					}
+					showUserMenu = false;
+				break;
+				case false: 
+					if(userMenu != null){
+						userMenu.style.display = 'inline';
+						userMenu.style.opacity = 1;
+					}
+					if (communityMenu != null) {
+						communityMenu.classList.add("pt-php-block-hide");
+					}
+					showUserMenu = true;
+					showCommunityMenu = false;
+					document.getElementById("pantipCategory_m").classList.add("toggleCat");
+					document.getElementById("pantipOther").classList.add("toggleCat");
+					other.classList.add("toggleCat");
+					document.getElementById("pt-other-container").classList.remove("other-height");
+					document.getElementById("pantipCategory_m").classList.add("toggleCat"); 
+                	document.getElementById("pt-category-container").classList.remove("cat-height");
+				break;
+				default:
+			}
+		}
+
+		else if (e.target.id == "openCommunityMenu" || $(e.target).hasClass('community-box')) {
+			if (e.target.id == "openCommunityMenu") {
+				switch (showCommunityMenu) {
+					case true:
+						if (communityMenu != null) {
+							communityMenu.classList.add("pt-php-block-hide");
+						}
+						showCommunityMenu = false;
+						break;
+					case false:
+						if (communityMenu != null) {
+							communityMenu.classList.remove("pt-php-block-hide");
+						}
+						if (userMenu != null) {
+							userMenu.style.display = 'none';
+							userMenu.style.opacity = 0;
+						}
+						showUserMenu = false;
+						showCommunityMenu = true;
+						document.getElementById("pantipCategory_m").classList.add("toggleCat");
+						document.getElementById("pantipOther").classList.add("toggleCat");
+						other.classList.add("toggleCat");
+						document.getElementById("pt-other-container").classList.remove("other-height");
+						document.getElementById("pantipCategory_m").classList.add("toggleCat");
+						document.getElementById("pt-category-container").classList.remove("cat-height");
+						break;
+					default:
+				}
+			}
+		}
+
+		else {
+			if (userMenu != null) {
+				userMenu.style.display = 'none';
+				userMenu.style.opacity = 0;
+			}
+			if (communityMenu != null) {
+				communityMenu.classList.add("pt-php-block-hide");
+			}
+			showUserMenu = false;
+			showCommunityMenu = false;
+		}
+	}
+	
+	window.onscroll = function() 
+	{
+		stickNav();
+	};
+};

@@ -1,0 +1,505 @@
+*, ::after, ::before 
+{
+    box-sizing: border-box;
+}
+.pt-position-ab
+{
+    position: absolute;
+}
+.pt-php-dialog
+{
+    position: relative;
+    max-width: 432px;
+    margin: auto;
+    min-width: 280px;
+    background-color: #353156;
+    border-radius: 4px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+.pt-php-dialog .pt-php-dialog__content 
+{
+  position: relative;
+  color: rgba(233, 229, 246, 0.6);
+  overflow-y: auto;
+  min-height: 88px;
+  line-height: 1.5;
+}
+.pt-arrow_box 
+{
+    position: relative;
+    border: 1px solid #7976A0;
+}
+.pt-arrow_box::after, .pt-arrow_box::before
+{
+    box-sizing: border-box;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;                            
+}
+.arrow-tr::before 
+{
+    bottom: 100%;
+    right: 36px;
+    border-bottom-color: #7976A0;
+    border-width: 12px;
+    margin-right: -12px;
+}
+.arrow-tr::after 
+{
+  bottom: 100%;
+  right: 36px;
+  border-bottom-color: #353156;
+  border-width: 10px;
+  margin-right: -10px;
+}
+.pt-php-block-header
+{
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    padding: 12px 16px;
+    min-height: 43px;
+    white-space: normal;
+    justify-content: space-between;
+    align-items: center;
+}
+.pt-php-block-header h6
+{
+    margin-bottom: 0;
+    word-wrap: break-word;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.pt-php-block-header-purple-2
+{
+    border-bottom: solid 1px #7976A0;
+}
+
+.php-txt-primary
+{
+    color: rgba(233, 229, 246, 0.87) !important;
+}
+.php-caption
+{
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.php-caption .php-links,.pt-php-dialog__bottom .php-links
+{
+    color: #B39DDB;
+}
+.php-caption .php-links:hover
+{
+    color: #D1C4E9;
+}
+.pt-php-dialog__content
+{
+    max-height: calc(90vh - 288px);
+}
+
+.pt-php-lists
+{
+  margin: 0;
+  padding: 8px 0;
+  list-style-type: none;
+    overflow: hidden;
+}
+.pt-php-lists.php-noti-list
+{
+
+}
+.pt-php-lists.pt-php-lists-dense .pt-php-lists-item
+{
+    height: 32px !important;
+    float: none;
+}
+.pt-php-lists.pt-php-lists-dense .pt-php-lists-item a
+{
+    padding: 0 16px;
+}
+.pt-php-lists.pt-php-lists-dense .pt-php-lists-item a .pt-php-lists-item__text
+{
+    margin: 0;
+}
+.pt-php-lists-item:hover
+{
+    background-color: rgba(0, 0, 0, 0.12) !important;
+}
+.pt-php-lists-item:active
+{
+    background-color: rgba(0, 0, 0, 0.24) !important;
+    color: #FFFFFF;
+}
+.php-dialog-list.pt-php-lists-item::after 
+{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    line-height: 1px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.12);
+    bottom: 0;
+    right: 0;
+}
+.pt-php-lists .pt-php-lists-item
+{
+    width: 100%;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+    color: rgba(233, 229, 246, 0.87);
+    padding: 0 !important;
+    border-right:none;
+}
+.pt-php-lists-item.pt-php-lists-item__readmark
+{
+    background-color: rgba(0, 0, 0, 0.24);
+
+}
+.pt-php-lists-item__primary-text
+{
+    color: rgba(233, 229, 246, 0.87);
+}
+.pt-php-lists-item.pt-php-lists-item__readmark .pt-php-lists-item__text .pt-php-lists-item__primary-text
+{
+    color: rgba(233, 229, 246, 0.6);
+}
+.pt-php-lists-item > a
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /*transition: background-color 0.15s linear;*/
+    color: rgba(233, 229, 246, 0.87);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 100%;
+    height: 100%;
+    padding: 0 16px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.pt-php-lists-item .pt-php-lists-item__graphic
+{
+    width: 48px;
+    height: 48px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.38);
+}
+.img-php-thumbnail 
+{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    transition: all .2s ease-in-out;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    max-height: 720px;
+    max-width: 720px;
+}
+.pt-php-lists-item__graphic 
+{
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    color: rgba(233, 229, 246, 0.6);
+    margin-left: 0;
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+}
+.pt-php-lists.pt-php-lists-dense .pt-php-lists-item .pt-php-lists-item__text 
+{
+    font-size: 14px;
+    align-self: center;
+}
+.pt-php-lists-item__text
+{
+    margin-top: -2px;
+    align-self: flex-start;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: 8px;
+    width: 100%;
+}
+.pt-php-lists-item__primary-text 
+{
+    color: rgba(233, 229, 246, 0.87);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    overflow: hidden;
+    display: block;
+    margin-top: 0;
+    margin-bottom: -20px;
+}
+.pt-php-lists-item__primary-text .txt-secondary
+{
+    vertical-align: 4px;
+    margin-left: 4px;
+}
+.pt-php-lists-item__primary-text.php-text-2line
+{
+    white-space: normal;
+    max-height: 56px;
+    line-height: 21px;
+    margin-bottom: -2px;
+}
+.pt-php-lists-item__text .pt-php-lists-item__secondary-text
+{
+    white-space: normal;
+    line-height: 18px;
+    max-height: 41px;
+}
+.pt-php-lists-item__secondary-text
+{
+    color: rgba(233, 229, 246, 0.6);
+    font-size: 0.875rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    overflow: hidden;
+    display: block;
+    margin-top: 0;
+}
+.pt-php-lists-item__primary-text::before 
+{
+  display: inline-block;
+  width: 0;
+  height: 32px;
+  content: "";
+  vertical-align: 0;
+}
+.pt-php-lists-item__primary-text::after 
+{
+  display: inline-block;
+  width: 0;
+  height: 20px;
+  content: "";
+  vertical-align: -20px;
+}
+.pt-php-lists-item__secondary-text::before 
+{
+    display: inline-block;
+    width: 0;
+    height: 20px;
+    content: "";
+    vertical-align: 0;
+}
+.pt-php-lists-item__meta-text
+{
+    margin-top: 16px;
+    align-self: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: rgba(233, 229, 246, 0.6);
+    font-size: 0.75rem;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+    position: relative;
+    margin-top: 18px;
+    display: block;
+    min-width: 72px;
+    white-space: nowrap;
+}
+.pt-php-lists-item__meta-text .pt-php-lists-item__meta-badge
+{
+    display: flex;
+    background-color: #F44336;
+    min-width: 8px;
+    min-height: 8px;
+    width: 8px;
+    height: 8px;
+    padding: 2px;
+    margin-left: auto;
+    margin-top: 8px;
+    border-radius: 50%;
+}
+.pt-php-dialog__bottom
+{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+    padding-left: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+    padding: 8px !important;
+    justify-content: center !important;
+}
+.pt-php-lists-item__icon-noti
+{
+    position: absolute;
+    top: 48px;
+    left: 48px;
+    z-index: 1;
+}
+.pt-php-lists-item__icon-noti img
+{
+    width: 24px !important;
+    height: 24px !important;
+    vertical-align: middle;
+}
+.pt-php-block-subheader-1
+{
+    color: rgba(233, 229, 246, 0.6);
+    border-color: rgba(255, 255, 255, 0.12);
+    border-top-color: rgba(255, 255, 255, 0.12);
+    border-bottom-color: rgba(255, 255, 255, 0.12);
+    background-color: #44416F;
+    border-top: solid 1px rgba(255, 255, 255, 0.12);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.12);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.pt-php-block-subheader
+{
+    display: flex;
+    margin-top: -1px !important;
+    position: relative;
+    padding: 4px 16px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.pt-php-lists-item.pt-php-opt-menu a
+{
+    padding-right: 0;
+}
+.pt-php-lists-item__meta
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    min-width: 40px;
+    max-height: 40px;
+    margin-right: 12px;
+    margin-left: auto;
+    border-radius: 50% !important;
+    transition: background .8s;
+    cursor: pointer;
+}
+.pt-php-lists-item__meta:hover
+{
+    color: rgba(233, 229, 246, 0.87);
+    background: rgba(115, 115, 153, 0.12);
+}
+.pt-php-notification-dropdown
+{
+    border: solid 1px rgba(255, 255, 255, 0.24);
+    background-color: #353156;
+    width: auto;
+    min-width: 228px;
+    max-width: 320px;
+    max-height: calc((32px * 10) - 16px);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    z-index: 1020;
+    border-radius: 0.25rem;
+    -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+.pt-lists-item__divider
+{
+    width: 100%;
+    height: 0 !important;
+    margin: 8px 0 !important;;
+    border: none !important;;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.12) !important;
+}
+.pt-php-block-hide
+{
+    display: none !important;
+}
+.pt-php-lists-item__primary-text-with-number
+{
+    max-width: calc(100% - 48px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: -4px;
+}
+.php-font-weight-meduim
+{
+    font-weight: 600 !important;
+}
+
+/*LOADING*/
+.selector-none
+{
+    user-select: none;
+}
+.pt-lds-mini_ring 
+{
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+}
+
+.pt-lds-mini_ring div 
+{
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    margin: 3px;
+    border: 3px solid #E9E5F6;
+    border-radius: 50%;
+    animation: pt-lds-mini_ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #E9E5F6 transparent transparent transparent;
+}
+.pt-lds-mini_ring div:nth-child(1) 
+{
+    animation-delay: -0.45s;
+}
+.pt-lds-mini_ring div:nth-child(2) 
+{
+    animation-delay: -0.3s;
+}
+.pt-lds-mini_ring div:nth-child(3) 
+{
+    animation-delay: -0.15s;
+}
+@keyframes pt-lds-mini_ring 
+{
+    0% 
+    {
+        transform: rotate(0deg);
+    }
+    100% 
+    {
+        transform: rotate(360deg);
+    }
+}

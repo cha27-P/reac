@@ -1,0 +1,65 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="หน้า-1" id="zK3YW51WgPlWhhGhwqGW">
+    <mxGraphModel dx="1000" dy="497" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NBvUKLScKqHSe8SoU5EL-1" value="จัดการสินค้า:" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="60" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NBvUKLScKqHSe8SoU5EL-2" value="จัดการสั่งซื้อและการชำระเงิน" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="280" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NBvUKLScKqHSe8SoU5EL-3" value="&lt;div&gt;จัดการตะกร้า&lt;span style=&quot;background-color: initial;&quot;&gt;สินค้า:&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="274" y="150" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NBvUKLScKqHSe8SoU5EL-4" value="จัดการติดตามคำสั่งซื้อ&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="380" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NBvUKLScKqHSe8SoU5EL-5" value="จัดการบัญชีผู้ใช้" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="470" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NBvUKLScKqHSe8SoU5EL-6" value="ผู้ซื้อ" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NBvUKLScKqHSe8SoU5EL-9" value="ผู้ขาย" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="240" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NBvUKLScKqHSe8SoU5EL-11" value="ผู้ดูแลระบบ" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="400" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NBvUKLScKqHSe8SoU5EL-15" value="" style="edgeStyle=none;html=1;endArrow=block;endFill=0;endSize=12;verticalAlign=bottom;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.027;entryY=0.33;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="NBvUKLScKqHSe8SoU5EL-6" target="NBvUKLScKqHSe8SoU5EL-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="87.11" y="169.74" as="sourcePoint" />
+            <mxPoint x="210.11" y="222.74" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NBvUKLScKqHSe8SoU5EL-16" value="" style="edgeStyle=none;html=1;endArrow=block;endFill=0;endSize=12;verticalAlign=bottom;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="NBvUKLScKqHSe8SoU5EL-6" target="NBvUKLScKqHSe8SoU5EL-3">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="110" y="110" as="sourcePoint" />
+            <mxPoint x="199.25" y="309.12" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NBvUKLScKqHSe8SoU5EL-19" value="" style="edgeStyle=none;html=1;endArrow=block;endFill=0;endSize=12;verticalAlign=bottom;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="NBvUKLScKqHSe8SoU5EL-9" target="NBvUKLScKqHSe8SoU5EL-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="32.599999999999994" y="191.73000000000002" as="sourcePoint" />
+            <mxPoint x="157.6" y="269.73" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NBvUKLScKqHSe8SoU5EL-20" value="" style="edgeStyle=none;html=1;endArrow=block;endFill=0;endSize=12;verticalAlign=bottom;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.016;entryY=0.303;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="NBvUKLScKqHSe8SoU5EL-11" target="NBvUKLScKqHSe8SoU5EL-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="240" y="320" as="sourcePoint" />
+            <mxPoint x="400" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NBvUKLScKqHSe8SoU5EL-22" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0.581;exitY=1.04;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="NBvUKLScKqHSe8SoU5EL-3" target="NBvUKLScKqHSe8SoU5EL-2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="360" y="350" as="sourcePoint" />
+            <mxPoint x="520" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
